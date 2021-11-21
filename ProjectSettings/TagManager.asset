@@ -8,6 +8,8 @@ TagManager:
   - FailMenu
   - Score
   - Best_Score
+  - Wall
+  - SliderWall
   layers:
   - Default
   - TransparentFX
