@@ -10,6 +10,7 @@ public class Scrolling : MonoBehaviour
     public void Click()          //Метод для смены направления при клике
     {
         speed *= -1;
+        new WaitForSeconds(0.2f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -22,6 +23,6 @@ public class Scrolling : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(speed*Time.deltaTime, 0, 0);
+        transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 }
