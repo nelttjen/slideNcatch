@@ -11,7 +11,7 @@ public class DeleteCube : MonoBehaviour
 
     IEnumerator CubeDestroy()
     {
-        yield return new WaitForSeconds(12f);          //∆дЄт 10секунд
+        yield return new WaitForSeconds(8f);          //∆дЄт 10секунд
         Destroy(gameObject);          //”дал€ет куб
     }
 

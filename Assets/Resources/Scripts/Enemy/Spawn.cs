@@ -5,12 +5,9 @@ public class Spawn : MonoBehaviour
 {
     private float spawnPos_x;          //Позиция спавна кубов-монстров по Х
     private float spawnPosScore_x;          //Позиция спавна кубов-с-очками по Х
-    public GameObject cube;
-    public GameObject score_cube;
+    public GameObject[] mass_Cube;
     private Vector3 spawnPos;
     private Vector3 spawnPosScore;
-    private float rndEnemy;
-    private float rndScore;
 
     private void FixedUpdate()
     {
@@ -22,36 +19,53 @@ public class Spawn : MonoBehaviour
 
     private void Start()
     {
-        rndEnemy = Random.Range(0.7f, 1.7f);
-        rndScore = Random.Range(1.5f, 2.7f);
-
         StartCoroutine(SpawnCubeCD());          //Запускает куратину по спавну кубов-монстров
         StartCoroutine(SpawnScoreCube());          //Запускает куратину по спавну кубов-с-очками
+        StartCoroutine(SpawnWallCube());
+        StartCoroutine(SpawnShieldCube());
     }
 
     void RepeatCD()          //Повторяет запуск куратины с кубами-монстрами
     {
         StartCoroutine(SpawnCubeCD());
     }
+    IEnumerator SpawnCubeCD()          //Куратина спавна кубов-монстров
+    {
+        yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
+        Instantiate(mass_Cube[0], spawnPos, Quaternion.identity);
+        RepeatCD();
+    }
 
     void RepeatScore()          //Повтаряет запуск куратины с кубами-с-очками
     {
         StartCoroutine(SpawnScoreCube());
     }
-
-    IEnumerator SpawnCubeCD()          //Куратина спавна кубов-монстров
-    {
-        yield return new WaitForSeconds(rndEnemy);
-        rndEnemy = Random.Range(0.7f, 1.7f);
-        Instantiate(cube, spawnPos, Quaternion.identity);
-        RepeatCD();
-    }
-
     IEnumerator SpawnScoreCube()          //Куратина спавна кубосв-с-очками
     {
-        yield return new WaitForSeconds(rndScore);
-        rndScore = Random.Range(1.5f, 2.7f);
-        Instantiate(score_cube, spawnPosScore, Quaternion.identity);
+        yield return new WaitForSeconds(Random.Range(1.5f, 2.7f));
+        Instantiate(mass_Cube[1], spawnPosScore, Quaternion.identity);
         RepeatScore();
+    }
+
+    void RepeatWall()
+    {
+        StartCoroutine(SpawnWallCube());
+    }
+    IEnumerator SpawnWallCube()
+    {
+        yield return new WaitForSeconds(Random.Range(3.7f, 6.7f));
+        Instantiate(mass_Cube[2], spawnPosScore, Quaternion.identity);
+        RepeatWall();
+    }
+
+    void RepeatShield()
+    {
+        StartCoroutine(SpawnShieldCube());
+    }
+    IEnumerator SpawnShieldCube()
+    {
+        yield return new WaitForSeconds(Random.Range(1.0f, 2.0f));
+        Instantiate(mass_Cube[3], spawnPosScore, Quaternion.identity);
+        RepeatShield();
     }
 }

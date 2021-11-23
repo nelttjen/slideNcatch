@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Scrolling : MonoBehaviour
 {
-    public float speed = 0.5f;
+    public float speed = 2f;
 
     public void Click()          //Метод для смены направления при клике
     {

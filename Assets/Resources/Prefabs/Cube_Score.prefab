@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 1992472843280000625}
   - component: {fileID: 727449947943104398}
   - component: {fileID: 4227696026174937911}
-  - component: {fileID: 5589654932765039396}
   - component: {fileID: 8677677245717123569}
   - component: {fileID: 8333970556252093243}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Square
   m_TagString: Score
   m_Icon: {fileID: 0}
@@ -106,18 +105,6 @@ MonoBehaviour:
   cub: {fileID: 7680945808421074627}
   rnd: 0
   _rnd: 0
---- !u!114 &5589654932765039396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2897587698654992904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef8e71c8b4806741828060b45ef7e9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &8677677245717123569
 Rigidbody2D:
   serializedVersion: 4
@@ -163,7 +150,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0514488, y: 1.0514488}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &7680945808421074627
 GameObject:
@@ -175,7 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7680945808421074624}
   - component: {fileID: 9070339059642756481}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Cube_Score
   m_TagString: Cube
   m_Icon: {fileID: 0}

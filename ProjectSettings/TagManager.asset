@@ -10,11 +10,13 @@ TagManager:
   - Best_Score
   - Wall
   - SliderWall
+  - Cube_Shield
+  - Undefined
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - FailMenu
   - Water
   - UI
   - Player

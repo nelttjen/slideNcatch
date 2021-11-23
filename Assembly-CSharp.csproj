@@ -53,7 +53,6 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Resources\Scripts\Player\Fail.cs" />
     <Compile Include="Assets\Resources\Scripts\Player\Scrolling.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\MenuScoreText.cs" />
     <Compile Include="Assets\Resources\Scripts\Enemy\MoveCube.cs" />
@@ -61,6 +60,7 @@
     <Compile Include="Assets\Resources\Scripts\Player\Score.cs" />
     <Compile Include="Assets\Resources\Scripts\Enemy\DeleteCube.cs" />
     <Compile Include="Assets\Resources\Scripts\Player\ScoreText.cs" />
+    <Compile Include="Assets\Resources\Scripts\Enemy\MoveCubeWall.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\GoTo.cs" />
   </ItemGroup>
   <ItemGroup>

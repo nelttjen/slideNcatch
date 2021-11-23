@@ -6,36 +6,35 @@ public class MoveCube : MonoBehaviour
 {
     private float RotateSpeed_Right;
     private float RotateSpeed_Left;
-    private readonly float speed_y=-5;
+    private readonly float speed_y=-4.5f;
     private float speed_x;
-    GameObject fon;
 
 
     public GameObject cub;
-    public int rnd;
-    public int _rnd;
+    public float rnd;
+    public float _rnd;
 
     private void Start()
     {
         RotateSpeed_Right = Random.Range(50, 200);          //Рандомная корость поворота против часовой
         RotateSpeed_Left = Random.Range(-50, -200);          //Рандомная скорость поворота по часовой
-        rnd = Random.Range(-5, 5);          //Число для рандомного определения стороны полёта куба
-        _rnd = Random.Range(-5, 5);          //Число для рандомного вращения круга
+        rnd = Random.Range(-2.0f, 3.0f);          //Число для рандомного определения стороны полёта куба
+        _rnd = Random.Range(5.0f, 5.0f);          //Число для рандомного вращения круга
         if (rnd < 0)
         {
-            speed_x = -2f;
+            speed_x = rnd;
         }
         else
         {
-            speed_x = 2f;
+            speed_x = rnd;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            speed_x *= -1;
+            Destroy(gameObject);
         }
     }
 
