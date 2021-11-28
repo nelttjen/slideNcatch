@@ -31,7 +31,7 @@ public class Spawn : MonoBehaviour
     }
     IEnumerator SpawnCubeCD()          //Куратина спавна кубов-монстров
     {
-        yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
+        yield return new WaitForSeconds(Random.Range(1f, 2f));
         Instantiate(mass_Cube[0], spawnPos, Quaternion.identity);
         RepeatCD();
     }
@@ -42,7 +42,7 @@ public class Spawn : MonoBehaviour
     }
     IEnumerator SpawnScoreCube()          //Куратина спавна кубосв-с-очками
     {
-        yield return new WaitForSeconds(Random.Range(1.5f, 2.7f));
+        yield return new WaitForSeconds(Random.Range(2f, 3f));
         Instantiate(mass_Cube[1], spawnPosScore, Quaternion.identity);
         RepeatScore();
     }
@@ -53,8 +53,8 @@ public class Spawn : MonoBehaviour
     }
     IEnumerator SpawnWallCube()
     {
-        yield return new WaitForSeconds(Random.Range(3.7f, 6.7f));
-        Instantiate(mass_Cube[2], spawnPosScore, Quaternion.identity);
+        yield return new WaitForSeconds(Random.Range(4f, 7f));
+        Instantiate(mass_Cube[2], spawnPos, Quaternion.identity);
         RepeatWall();
     }
 
@@ -64,7 +64,7 @@ public class Spawn : MonoBehaviour
     }
     IEnumerator SpawnShieldCube()
     {
-        yield return new WaitForSeconds(Random.Range(12.0f, 25.0f));
+        yield return new WaitForSeconds(Random.Range(10.0f, 20.0f));
         Instantiate(mass_Cube[3], spawnPosScore, Quaternion.identity);
         RepeatShield();
     }

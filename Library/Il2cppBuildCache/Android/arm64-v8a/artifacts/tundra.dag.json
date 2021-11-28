@@ -19,7 +19,7 @@
     },
     {
       "Annotation": "Il2Cpp C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/arm64-v8a/Native/arm64-v8a/libil2cpp.so",
-      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2020.3.19f1\\Editor\\Data\\il2cpp/build/deploy/netcoreapp3.1/il2cpp.exe\" --compile-cpp --libil2cpp-static --platform=\"Android\" --architecture=\"ARM64\" --configuration=\"Release\" --outputpath=\"C:\\Users\\user\\Desktop\\IT\\MyProgect\\slideNcatch\\Library\\Il2cppBuildCache\\Android\\arm64-v8a\\Native\\arm64-v8a\\libil2cpp.so\" --cachedirectory=\"C:\\Users\\user\\Desktop\\IT\\MyProgect\\slideNcatch\\Assets\\..\\Library\\il2cpp_android_arm64-v8a/il2cpp_cache\" --additional-include-directories=\"C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\bdwgc/include\" --additional-include-directories=\"C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\libil2cpp/include\" --baselib-directory=\"C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer\\Variations\\il2cpp\\Release\\StaticLibs\\arm64-v8a\" --avoid-dynamic-library-copy --tool-chain-path=\"C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK\" --incremental-g-c-time-slice=3 --profiler-report --map-file-parser=\"C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Tools/MapFileParser/MapFileParser.exe\" --generatedcppdir=C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/armeabi-v7a/il2cppOutput --dotnetprofile=\"unityaot\"",
+      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2020.3.23f1\\Editor\\Data\\il2cpp/build/deploy/netcoreapp3.1/il2cpp.exe\" --compile-cpp --libil2cpp-static --platform=\"Android\" --architecture=\"ARM64\" --configuration=\"Release\" --outputpath=\"C:\\Users\\user\\Desktop\\IT\\MyProgect\\slideNcatch\\Library\\Il2cppBuildCache\\Android\\arm64-v8a\\Native\\arm64-v8a\\libil2cpp.so\" --cachedirectory=\"C:\\Users\\user\\Desktop\\IT\\MyProgect\\slideNcatch\\Assets\\..\\Library\\il2cpp_android_arm64-v8a/il2cpp_cache\" --additional-include-directories=\"C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\bdwgc/include\" --additional-include-directories=\"C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\libil2cpp/include\" --baselib-directory=\"C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer\\Variations\\il2cpp\\Release\\StaticLibs\\arm64-v8a\" --avoid-dynamic-library-copy --tool-chain-path=\"C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK\" --incremental-g-c-time-slice=3 --profiler-report --map-file-parser=\"C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Tools/MapFileParser/MapFileParser.exe\" --generatedcppdir=C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/armeabi-v7a/il2cppOutput --stats-output-dir=C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/armeabi-v7a/il2cppStats --dotnetprofile=\"unityaot\"",
       "Inputs": [
         "C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/armeabi-v7a/il2cppOutput/Assembly-CSharp.cpp",
         "C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/armeabi-v7a/il2cppOutput/Assembly-CSharp_Attr.cpp",
@@ -154,10 +154,10 @@
         "C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/armeabi-v7a/il2cppOutput/UnityEngine_Attr.cpp",
         "C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/armeabi-v7a/il2cppOutput/UnityEngine_CodeGen.c",
         "C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/armeabi-v7a/il2cppOutput/UnresolvedVirtualCallStubs.cpp",
-        "C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Tools/MapFileParser/MapFileParser.exe",
-        "C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/StaticLibs/arm64-v8a/baselib.a",
-        "C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/StaticLibs/arm64-v8a/libunityruntime.a",
-        "\"C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/il2cpp/build/deploy/netcoreapp3.1/il2cpp.exe\""
+        "C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Tools/MapFileParser/MapFileParser.exe",
+        "C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/StaticLibs/arm64-v8a/baselib.a",
+        "C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/StaticLibs/arm64-v8a/libunityruntime.a",
+        "\"C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/il2cpp/build/deploy/netcoreapp3.1/il2cpp.exe\""
       ],
       "Outputs": [
         "C:/Users/user/Desktop/IT/MyProgect/slideNcatch/Library/Il2cppBuildCache/Android/arm64-v8a/Native/arm64-v8a/libil2cpp.so"
@@ -175,13 +175,13 @@
   ],
   "FileSignatures": [
     {
-      "File": "../../../../../../../../../../Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/bdwgc/include"
+      "File": "../../../../../../../../../../Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/bdwgc/include"
     },
     {
-      "File": "../../../../../../../../../../Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/libil2cpp/include"
+      "File": "../../../../../../../../../../Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/libil2cpp/include"
     },
     {
-      "File": "../../../../../../../../../../Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/StaticLibs/arm64-v8a"
+      "File": "../../../../../../../../../../Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/StaticLibs/arm64-v8a"
     },
     {
       "File": "../armeabi-v7a/il2cppOutput"
@@ -210,7 +210,7 @@
       "Filter": "*.h"
     },
     {
-      "Path": "../../../../../../../../../../Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/StaticLibs/arm64-v8a",
+      "Path": "../../../../../../../../../../Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/StaticLibs/arm64-v8a",
       "Recurse": 1
     }
   ],

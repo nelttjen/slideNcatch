@@ -48,7 +48,7 @@ public class Score : MonoBehaviour
     {
         _shield = true;
         shield.SetActive(true);
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(Random.Range(5f, 10f));
         _shield = false;
         shield.SetActive(false);
         StopCoroutine(Shield());
