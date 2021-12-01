@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Scrolling : MonoBehaviour
 {
     public float speed = 2f;
+    private float x;
 
     public void Click()          //Метод для смены направления при клике
     {
@@ -17,12 +18,17 @@ public class Scrolling : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("SliderWall"))
         {
-            speed *= -1;
+            if (x > 1.9f || x < -1.9f)
+            {
+                speed *= -1;
+            }
         }
     }
 
     private void Update()
     {
+        x = transform.position.x;
+
         transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 }

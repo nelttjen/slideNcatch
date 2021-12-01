@@ -64,7 +64,7 @@ public class Spawn : MonoBehaviour
     }
     IEnumerator SpawnShieldCube()
     {
-        yield return new WaitForSeconds(Random.Range(10.0f, 20.0f));
+        yield return new WaitForSeconds(Random.Range(12.0f, 22.0f));
         Instantiate(mass_Cube[3], spawnPosScore, Quaternion.identity);
         RepeatShield();
     }

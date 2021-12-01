@@ -62,6 +62,7 @@
     <Compile Include="Assets\Resources\Scripts\Player\ScoreText.cs" />
     <Compile Include="Assets\Resources\Scripts\Enemy\MoveCubeWall.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\GoTo.cs" />
+    <Compile Include="Assets\Resources\Scripts\Player\Death.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

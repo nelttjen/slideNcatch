@@ -18,7 +18,7 @@ public class MoveCube : MonoBehaviour
     {
         RotateSpeed_Right = Random.Range(50, 200);          //Рандомная корость поворота против часовой
         RotateSpeed_Left = Random.Range(-50, -200);          //Рандомная скорость поворота по часовой
-        rnd = Random.Range(-2.0f, 3.0f);          //Число для рандомного определения стороны полёта куба
+        rnd = Random.Range(-1.7f, 2.7f);          //Число для рандомного определения стороны полёта куба
         _rnd = Random.Range(5.0f, 5.0f);          //Число для рандомного вращения круга
         if (rnd < 0)
         {

@@ -5,14 +5,21 @@ public class Score : MonoBehaviour
 {
     private int current_score;
     private bool _shield = false;
+    private int count = 0;
+    private int rnd;
+    public GameObject Circle;
+    public GameObject particle;
     public GameObject FailMenu;
     public GameObject shield;
-    public GameObject[] cubs;
+    private Animator anim;
 
     private void Start()
     {
-        //Задаём начальное число очков в начале игры
+        anim = GetComponent<Animator>();
+        anim.speed = 0;
+        anim.Play("ScoreAnim");
         current_score = PlayerPrefs.GetInt("Current_Score");
+        rnd = Random.Range(0, 9);
     }
 
     private void Update()
@@ -28,20 +35,31 @@ public class Score : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Cube") && _shield == false)          //Проверка на соприкосновение с крассным кубом
         {
-            Time.timeScale = 0;          //Останавливает время в игре
-            StopAllCoroutines();          //ОСтанавливает все куратины
+            gameObject.GetComponent<SpriteRenderer>().color = Color.clear;
+            Destroy(Circle);
+            StartPartic();
         }
 
         if (collision.gameObject.CompareTag("Score"))
         {
             current_score++;
             PlayerPrefs.SetInt("Current_Score", current_score);
+            StartCoroutine(AnimationScore());
         }
 
         if (collision.gameObject.CompareTag("Cube_Shield"))
         {
             StartCoroutine(Shield());
         }
+    }
+
+    IEnumerator AnimationScore()
+    {
+        anim.Play("ScoreAnim");
+        anim.speed = 1f;
+        yield return new WaitForSeconds(1f);
+        anim.speed = 0f;
+        StopCoroutine(AnimationScore());
     }
 
     IEnumerator Shield()
@@ -52,5 +70,27 @@ public class Score : MonoBehaviour
         _shield = false;
         shield.SetActive(false);
         StopCoroutine(Shield());
+    }
+
+    private void StartPartic()
+    {
+        StartCoroutine(Partic());
+    }
+
+    IEnumerator Partic()
+    {
+        Time.timeScale = 0.3f;
+        Instantiate(particle, transform.position, Quaternion.identity);
+        count++;
+        yield return new WaitForSeconds(0.05f);
+        if (count == 40)
+        {
+            Time.timeScale = 0;
+            StopAllCoroutines();
+        }
+        else
+        {
+            StartPartic();
+        }
     }
 }
