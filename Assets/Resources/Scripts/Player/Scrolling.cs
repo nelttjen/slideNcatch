@@ -10,19 +10,11 @@ public class Scrolling : MonoBehaviour
 
     public void Click()          //Метод для смены направления при клике
     {
-        speed *= -1;
-        new WaitForSeconds(0.2f);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("SliderWall"))
+        if (-1.9 < x && x < 1.9)
         {
-            if (x > 1.9f || x < -1.9f)
-            {
-                speed *= -1;
-            }
+            speed *= -1;
         }
+        new WaitForSeconds(0.2f);
     }
 
     private void Update()
@@ -30,5 +22,9 @@ public class Scrolling : MonoBehaviour
         x = transform.position.x;
 
         transform.Translate(speed * Time.deltaTime, 0, 0);
+        if (x > 1.9f && speed > 0 || x < -1.9f && speed < 0)
+        {
+            speed *= -1;
+        }
     }
 }
