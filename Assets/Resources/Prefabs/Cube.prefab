@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8677677245717123569}
   - component: {fileID: 8333970556252093243}
   - component: {fileID: 4227696026174937911}
+  - component: {fileID: 6695363915188763296}
   m_Layer: 7
   m_Name: Square
   m_TagString: Cube
@@ -152,6 +153,18 @@ MonoBehaviour:
   cub: {fileID: 7680945808421074627}
   rnd: 0
   _rnd: 0
+--- !u!114 &6695363915188763296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2897587698654992904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882719ccd31ba104cbc64d47cf89a186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7680945808421074627
 GameObject:
   m_ObjectHideFlags: 0

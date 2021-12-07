@@ -675,7 +675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.9500122, y: 0}
+  m_AnchoredPosition: {x: -2.9499512, y: 0}
   m_SizeDelta: {x: -5.9, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939048830
@@ -806,8 +806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.9000244, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.9500732, y: 0}
+  m_SizeDelta: {x: 5.9, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1139666233
 MonoBehaviour:
@@ -1021,6 +1021,9 @@ MonoBehaviour:
   particle: {fileID: 1482967467205082961, guid: 6b0fb135020028444bdd3d055773b303, type: 3}
   FailMenu: {fileID: 437953819209127361}
   shield: {fileID: 2082266089}
+  enemyCube:
+  - {fileID: 7680945808421074627, guid: 51763cdc878366746a92cfde73d34b2e, type: 3}
+  - {fileID: 4167555285823443236, guid: 1208e9bcf3d06bd4caf9ef58bfafa9e9, type: 3}
 --- !u!1 &1819958153
 GameObject:
   m_ObjectHideFlags: 0

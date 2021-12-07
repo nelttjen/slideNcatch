@@ -4,7 +4,7 @@ using UnityEngine;
 public class Score : MonoBehaviour
 {
     private int current_score;
-    private bool _shield = false;
+    public static bool _shield = false;
     private int count = 0;
     private int rnd;
     public GameObject Circle;
@@ -39,6 +39,10 @@ public class Score : MonoBehaviour
             Destroy(Circle);
             StartPartic();
         }
+        if (collision.gameObject.CompareTag("Cube") && _shield == true)          //Проверка на соприкосновение с крассным кубом
+        {
+            
+        }
 
         if (collision.gameObject.CompareTag("Score"))
         {
@@ -66,24 +70,24 @@ public class Score : MonoBehaviour
     {
         _shield = true;
         shield.SetActive(true);
-        yield return new WaitForSeconds(Random.Range(5f, 10f));
+        yield return new WaitForSeconds(Random.Range(6f, 10f));
         _shield = false;
         shield.SetActive(false);
         StopCoroutine(Shield());
     }
 
+    #region Партиклы при смерти
     private void StartPartic()
     {
         StartCoroutine(Partic());
     }
-
     IEnumerator Partic()
     {
         Time.timeScale = 0.3f;
         Instantiate(particle, transform.position, Quaternion.identity);
         count++;
         yield return new WaitForSeconds(0.05f);
-        if (count == 40)
+        if (count == 30)
         {
             Time.timeScale = 0;
             StopAllCoroutines();
@@ -93,4 +97,5 @@ public class Score : MonoBehaviour
             StartPartic();
         }
     }
+    #endregion
 }

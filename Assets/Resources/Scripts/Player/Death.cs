@@ -18,7 +18,6 @@ public class Death : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(x * Time.deltaTime, y * Time.deltaTime, 0);
-        
+        transform.Translate(x * Time.deltaTime, y * Time.deltaTime, 0);        
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7850481971795574654}
   - component: {fileID: 7437686711069857204}
   - component: {fileID: 3329292183591384504}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Square
   m_TagString: Cube_Shield
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9081505610036975695}
   - component: {fileID: 9081505610036975694}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube_Shield
   m_TagString: Cube
   m_Icon: {fileID: 0}
